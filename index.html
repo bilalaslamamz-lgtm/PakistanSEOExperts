@@ -1,283 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO Services in Pakistan | Bilal SEO Services</title>
-  <meta name="description" content="Bilal SEO Services offers professional SEO services in Pakistan. We are a professional SEO agency in Pakistan providing affordable SEO services for small businesses and local SEO experts in Pakistan.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional SEO Services in Pakistan | Bilal SEO Services</title>
+<meta name="description" content="Bilal SEO Services provides professional SEO services in Pakistan. We offer affordable SEO services in Pakistan, local SEO experts in Pakistan, and complete SEO solutions for Pakistani businesses.">
 
-  <style>
-    :root {
-      --red-primary: #E42024;
-      --gold-primary: #C0A54B;
-      --green-primary: #488866;
-      --dark-blue-bg: #1D0C47;
-      --purple-accent: #692DC6;
-      --dark-slate: #253337;
-    }
+<style>
+:root {
+  --red-primary: #E42024;
+  --gold-primary: #C0A54B;
+  --green-primary: #488866;
+  --dark-blue-bg: #1D0C47;
+  --purple-accent: #692DC6;
+  --dark-slate: #253337;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: 'Segoe UI', sans-serif;
-    }
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI, sans-serif;scroll-behavior:smooth;}
+body{background:#f4f5f9;color:var(--dark-slate);line-height:1.7;}
+section{padding:80px 8%;}
+h2{
+  background:linear-gradient(90deg,var(--gold-primary),var(--purple-accent));
+  color:#fff;
+  padding:12px 20px;
+  border-radius:8px;
+  margin-bottom:25px;
+  font-size:26px;
+}
+h3{color:var(--purple-accent);margin-bottom:10px;}
+a{text-decoration:none}
 
-    body {
-      background: #f9f9fb;
-      color: var(--dark-slate);
-    }
+/* Header */
+header{
+  background:var(--dark-blue-bg);
+  padding:15px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;top:0;z-index:1000;
+}
+header h1{color:#fff;font-size:22px;}
+nav a{color:#fff;margin-left:20px;font-size:14px;transition:.3s;}
+nav a:hover{color:var(--gold-primary);}
 
-    header {
-      background: var(--dark-blue-bg);
-      padding: 15px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+/* Hero */
+.hero{
+  background:linear-gradient(rgba(192,165,75,0.75),rgba(192,165,75,0.6)), url('banner.jpg') center/cover no-repeat;
+  color:#fff;
+  text-align:center;
+  padding:120px 8%;
+}
+.hero h1{font-size:42px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:30px;}
+.btn{
+  display:inline-block;
+  background:var(--red-primary);
+  padding:12px 30px;
+  color:#fff;
+  border-radius:30px;
+  transition:.3s;
+}
+.btn:hover{background:var(--green-primary);transform:translateY(-3px);}
 
-    header h2 {
-      color: #fff;
-    }
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 25px rgba(0,0,0,0.15);}
 
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+/* Images */
+img{width:100%;border-radius:10px;margin-top:20px;box-shadow:0 8px 20px rgba(0,0,0,0.15);}
 
-    nav a:hover {
-      color: var(--gold-primary);
-    }
+/* Contact */
+form{max-width:500px;display:flex;flex-direction:column;gap:15px;}
+input,textarea{
+  padding:12px;border-radius:6px;border:1px solid #ccc;
+}
+button{
+  background:var(--green-primary);
+  color:#fff;border:none;padding:12px;border-radius:6px;
+  cursor:pointer;transition:.3s;
+}
+button:hover{background:var(--red-primary);}
 
-    section {
-      padding: 80px 8%;
-    }
+/* FAQ */
+.faq-item{margin-bottom:20px;}
+.faq-item h3{color:var(--red-primary);}
 
-    .hero {
-      background: linear-gradient(rgba(29,12,71,0.85), rgba(105,45,198,0.8)), url('banner.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 120px 8%;
-    }
+/* Footer */
+footer{
+  background:var(--dark-blue-bg);
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
 
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+/* WhatsApp */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px 18px;
+  border-radius:50%;
+  font-size:20px;
+  animation:pulse 1.5s infinite;
+}
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.1);}
+  100%{transform:scale(1);}
+}
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 30px;
-      background: var(--red-primary);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: var(--gold-primary);
-      transform: translateY(-3px);
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: var(--purple-accent);
-      font-size: 28px;
-    }
-
-    .about p {
-      max-width: 800px;
-      line-height: 1.6;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-    }
-
-    .rates img, .parasite img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      gap: 15px;
-    }
-
-    .contact input, .contact textarea {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .contact button {
-      padding: 10px;
-      border: none;
-      background: var(--green-primary);
-      color: #fff;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .contact button:hover {
-      background: var(--red-primary);
-    }
-
-    footer {
-      background: var(--dark-blue-bg);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: #fff;
-      padding: 15px 18px;
-      border-radius: 50%;
-      font-size: 20px;
-      text-decoration: none;
-      animation: bounce 1.5s infinite;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    @media(max-width:768px){
-      .hero h1 { font-size: 30px; }
-      header { flex-direction: column; }
-      nav { margin-top: 10px; }
-    }
-  </style>
+@media(max-width:768px){
+.hero h1{font-size:30px;}
+header{flex-direction:column;}
+nav{margin-top:10px;}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h2>Bilal SEO Services</h2>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#rates">Rates</a>
-    <a href="#parasite">Parasite SEO</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<h1>Bilal SEO Services</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#rates">Rates</a>
+<a href="#parasite">Parasite SEO</a>
+<a href="#faq">Q&A</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-  <h1>Professional SEO Services in Pakistan</h1>
-  <p>Helping businesses grow online with affordable SEO services in Pakistan and proven ranking strategies.</p>
-  <a href="#contact" class="btn">Get Free Consultation</a>
+<h1>Professional SEO Services in Pakistan</h1>
+<p>Bilal SEO Services provides affordable SEO services in Pakistan designed to help businesses dominate search engines. We are trusted local SEO experts in Pakistan helping small and medium businesses achieve consistent growth through data-driven strategies.</p>
+<a href="#contact" class="btn">Get Free Strategy Call</a>
 </section>
 
-<section id="about" class="about">
-  <h2>Professional SEO Agency in Pakistan</h2>
-  <p>Bilal SEO Services is a professional SEO agency in Pakistan offering small business SEO services Pakistan trusts. As a leading SEO company for Pakistani businesses, we focus on increasing traffic, improving Google rankings, and generating qualified leads through ethical SEO strategies.</p>
+<section id="about">
+<h2>About Our Professional SEO Agency in Pakistan</h2>
+<p>Bilal SEO Services is a professional SEO agency in Pakistan focused on helping brands grow online visibility, organic traffic, and qualified leads. As a trusted SEO company for Pakistani businesses, we understand local market competition, search behavior, and algorithm updates. Our approach combines technical SEO, on-page optimization, authority link building, and content marketing to deliver sustainable rankings.</p>
+<p>We specialize in small business SEO services Pakistan entrepreneurs rely on. Whether you are a startup, eCommerce store, local service provider, or corporate brand, our strategies are customized to your business goals. We believe SEO is not just about rankings — it is about revenue growth, brand trust, and long-term digital dominance.</p>
 </section>
 
 <section id="services">
-  <h2>Affordable SEO Services in Pakistan</h2>
-  <div class="services-grid">
-    <div class="card">
-      <h3>On-Page SEO</h3>
-      <p>Technical optimization, keyword targeting, and content structure improvements.</p>
-    </div>
-    <div class="card">
-      <h3>Local SEO Experts in Pakistan</h3>
-      <p>Google Business Profile optimization and local search ranking strategies.</p>
-    </div>
-    <div class="card">
-      <h3>Link Building</h3>
-      <p>High-quality backlinks to increase domain authority and rankings.</p>
-    </div>
-    <div class="card">
-      <h3>Technical SEO</h3>
-      <p>Website audits, speed optimization, indexing and crawl improvements.</p>
-    </div>
-  </div>
+<h2>Affordable SEO Services in Pakistan</h2>
+<div class="grid">
+<div class="card">
+<h3>On-Page Optimization</h3>
+<p>Keyword mapping, meta optimization, schema markup, internal linking, and content improvements aligned with search intent.</p>
+</div>
+<div class="card">
+<h3>Technical SEO</h3>
+<p>Website audits, Core Web Vitals optimization, crawlability fixes, XML sitemap setup, indexing solutions, and speed optimization.</p>
+</div>
+<div class="card">
+<h3>Local SEO Experts in Pakistan</h3>
+<p>Google Business Profile optimization, local citations, geo-targeted content, and local ranking improvements.</p>
+</div>
+<div class="card">
+<h3>Authority Link Building</h3>
+<p>High-quality backlink campaigns from authoritative domains to strengthen domain authority and trust signals.</p>
+</div>
+</div>
 </section>
 
-<section id="rates" class="rates">
-  <h2>SEO Services Pricing Plans</h2>
-  <p>Flexible and affordable SEO services in Pakistan tailored for startups and enterprises.</p>
-  <img src="rate.jpg" alt="Affordable SEO services in Pakistan pricing plans">
+<section id="rates">
+<h2>SEO Services Pricing Plans</h2>
+<p>Our SEO services in Pakistan are flexible and performance-driven. We provide affordable SEO services in Pakistan for startups and comprehensive packages for enterprises. Pricing depends on competition level, industry, and growth goals.</p>
+<img src="rate.jpg" alt="Affordable SEO services in Pakistan pricing packages">
 </section>
 
-<section id="parasite" class="parasite">
-  <h2>Parasite SEO Services</h2>
-  <p>Boost rankings quickly using powerful parasite SEO strategies. Our professional SEO agency in Pakistan helps businesses dominate competitive keywords effectively.</p>
-  <img src="parasite.jpg" alt="Professional SEO agency in Pakistan parasite SEO strategy">
+<section id="parasite">
+<h2>Advanced Parasite SEO Strategy</h2>
+<p>Parasite SEO is a powerful ranking method that leverages high-authority platforms to rank competitive keywords quickly. Our professional SEO agency in Pakistan uses ethical parasite SEO strategies to secure first-page visibility for competitive niches. This strategy works effectively for local services, affiliate projects, and high-competition industries.</p>
+<img src="parasite.jpg" alt="Professional SEO agency in Pakistan parasite SEO strategy">
 </section>
 
-<section id="contact" class="contact">
-  <h2>Contact Bilal SEO Services</h2>
-  <form action="https://formsubmit.co/bilalaslamamz@gmail.com" method="POST">
-  
-  <input type="text" name="name" placeholder="Your Name" required>
-  
-  <input type="email" name="email" placeholder="Your Email" required>
-  
-  <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<section id="faq">
+<h2>Advanced SEO Questions & Answers</h2>
 
-  <!-- Disable captcha -->
-  <input type="hidden" name="_captcha" value="false">
+<div class="faq-item">
+<h3>1. How long does SEO take to show results?</h3>
+<p>SEO typically takes 3–6 months depending on competition, domain authority, and strategy execution.</p>
+</div>
 
-  <!-- Email subject -->
-  <input type="hidden" name="_subject" value="New SEO Services Inquiry">
+<div class="faq-item">
+<h3>2. Why choose local SEO experts in Pakistan?</h3>
+<p>Local SEO experts understand Pakistani market trends, competition, and search behavior patterns.</p>
+</div>
 
-  <!-- Redirect after submit (optional) -->
-  <input type="hidden" name="_next" value="https://yourproject.pages.dev/thank-you.html">
+<div class="faq-item">
+<h3>3. Do you offer small business SEO services Pakistan wide?</h3>
+<p>Yes, we provide SEO services tailored specifically for startups and small businesses.</p>
+</div>
 
-  <button type="submit">Submit</button>
+<div class="faq-item">
+<h3>4. What makes you a professional SEO agency in Pakistan?</h3>
+<p>Our data-driven approach, technical expertise, and ethical SEO methods differentiate us.</p>
+</div>
+
+<div class="faq-item">
+<h3>5. Is SEO better than paid ads?</h3>
+<p>SEO provides long-term sustainable traffic compared to temporary paid campaigns.</p>
+</div>
+
+<div class="faq-item">
+<h3>6. Do you provide keyword research?</h3>
+<p>Yes, we conduct advanced keyword research using competitive analysis tools.</p>
+</div>
+
+<div class="faq-item">
+<h3>7. What industries do you serve?</h3>
+<p>We serve eCommerce, local services, healthcare, real estate, and corporate sectors.</p>
+</div>
+
+<div class="faq-item">
+<h3>8. Do you guarantee rankings?</h3>
+<p>No agency can guarantee rankings, but we follow proven strategies for consistent growth.</p>
+</div>
+
+<div class="faq-item">
+<h3>9. What is technical SEO?</h3>
+<p>Technical SEO ensures search engines can crawl and index your website effectively.</p>
+</div>
+
+<div class="faq-item">
+<h3>10. How do I start?</h3>
+<p>Contact us for a free consultation and SEO audit tailored to your business.</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact Bilal SEO Services</h2>
+<form action="https://formsubmit.co/bilalaslamamz@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New SEO Services Inquiry">
+<button type="submit">Submit</button>
 </form>
 </section>
 
 <footer>
-  <p>© 2026 Bilal SEO Services. All Rights Reserved.</p>
+<p>© 2026 Bilal SEO Services | Professional SEO Services in Pakistan</p>
 </footer>
 
-<a href="https://wa.me/923009544743" class="whatsapp-btn" target="_blank">💬</a>
+<a href="https://wa.me/923009544743" class="whatsapp" target="_blank">💬</a>
 
 </body>
-
 </html>
